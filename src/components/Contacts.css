@@ -1,0 +1,20 @@
+.contacts-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #00bfff;
+}
+
+.contacts-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.contacts-title {
+
+    font-size: 2rem;
+    margin: 1rem 0;
+}

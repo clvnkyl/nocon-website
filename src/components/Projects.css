@@ -1,0 +1,24 @@
+.projectsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0B1740;
+    padding: 90px 0;
+}
+
+.projectsContainer h1 {
+    font-size: 2.5rem;
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    color: #00bfff;
+    border-bottom: 2px solid #00bfff;
+}
+
+.projectsGrid {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: space-around;
+  align-items: center;
+}

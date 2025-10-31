@@ -1,0 +1,115 @@
+.certificate-card {
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 300px;
+    height: auto;
+    min-height: 250px;
+    padding: 25px;
+    text-align: center;
+    background-color: #0B1740;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificate-card:hover {
+  color: #111;
+  transform: scale(1.05);
+  
+}
+
+.certificate-card h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #00bfff;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2; /* for compatibility for other browser */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.image {
+    max-width: 100%;
+    height: 40%;
+    margin: 0px;
+    justify-self: center;
+    background-color: white;
+}
+
+/* --- Popup overlay --- */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* --- Popup container --- */
+.popup-content {
+  position: relative;
+  background: #111;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: popup-fade 0.3s ease;
+}
+
+.popup-image {
+  max-width: 95%;
+  max-height: 70vh;
+  border-radius: 10px;
+  object-fit: contain;
+  margin-top: 15px;
+}
+
+.popup-title {
+  color: #00bfff;
+  margin: 5px;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #00bfff;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+
+.close-btn:hover {
+  background: #0099cc;
+}
+
+@keyframes popup-fade {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
