@@ -5,11 +5,14 @@ import Skills from './components/Skills'
 import Certificates from './components/Certificates'
 import Contact from './components/Contacts'
 import Footer from './components/Footer'
+import AnimatedSection from './components/AnimatedSection'
+
+
 function App() {
   return (
     <>
-      <Navbar />
-      <Header />
+      <Navbar /> 
+      <AnimatedSection animation="fade-up"> <Header /> </AnimatedSection>
       <Projects />
       <Certificates />
       <Skills />

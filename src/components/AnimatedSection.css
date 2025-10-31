@@ -1,0 +1,49 @@
+.animated-section {
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+
+/* ✅ Fade Up */
+.fade-up {
+  transform: translateY(50px);
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ✅ Fade Down */
+.fade-down {
+  transform: translateY(-50px);
+}
+.fade-down.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ✅ Slide Left */
+.slide-left {
+  transform: translateX(-80px);
+}
+.slide-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ✅ Slide Right */
+.slide-right {
+  transform: translateX(80px);
+}
+.slide-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ✅ Zoom In */
+.zoom-in {
+  transform: scale(0.8);
+}
+.zoom-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}

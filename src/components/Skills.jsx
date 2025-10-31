@@ -1,4 +1,5 @@
 import "./Skills.css";
+import AnimatedSection from "./AnimatedSection";
 
 function Skills() {
   const skillCategories = {
@@ -12,21 +13,27 @@ function Skills() {
   };
 
   return (
-    <section id="skill-section" className="skills-section">
-      <h2 className="skills-title">My Skills</h2>
-      <div className="skills-container">
-        {Object.entries(skillCategories).map(([category, skills], index) => (
-          <div key={index} className="skills-category">
-            <h3 className="category-title">{category}</h3>
-            <div className="skills-grid">
-              {skills.map((skill, i) => (
-                <span key={i} className="skill-badge">{skill}</span>
+        <section id="skill-section" className="skills-section">
+          <h2 className="skills-title">My Skills</h2>
+          <div className="skills-container">
+            
+            <AnimatedSection animation="slide-left">
+              {Object.entries(skillCategories).map(([category, skills], index) => (
+                <div key={index} className="skills-category">
+                  <h3 className="category-title">{category}</h3>
+                  <AnimatedSection animation="slide-right">
+                    <div className="skills-grid">
+                      {skills.map((skill, i) => (
+                        <span key={i} className="skill-badge">{skill}</span>
+                      ))}
+                    </div>
+                  </AnimatedSection>
+                </div>
               ))}
-            </div>
+            </AnimatedSection>
+            
           </div>
-        ))}
-      </div>
-    </section>
+        </section>
   );
 }
 

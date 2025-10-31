@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./CertificateCard.css";
 import certificateCardImage from "../../assets/projectImg.svg";
+import AnimatedSection from './../AnimatedSection'
 
 function CertificateCards({ image = certificateCardImage, name = "Project Name" }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,10 +9,14 @@ function CertificateCards({ image = certificateCardImage, name = "Project Name" 
   return (
     <>
       {/* Card */}
-      <div className="certificate-card" onClick={() => setIsOpen(true)}>
-        <img src={image} alt="certificate preview" className="image" />
-        <h2>{name}</h2>
-      </div>
+
+      <AnimatedSection animation="slide-right">
+        <div className="certificate-card" onClick={() => setIsOpen(true)}>
+          <img src={image} alt="certificate preview" className="image" />
+          <h2>{name}</h2>
+        </div>
+      </AnimatedSection>
+        
 
       {/* Popup Modal */}
       {isOpen && (
