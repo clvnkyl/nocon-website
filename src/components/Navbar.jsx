@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <nav className="navBar">
-      <img className="logo" src={logo} alt="CK" />
+      <img className="logo" src={logo} alt="CK" href="#home-section" />
 
       {/* Hamburger button */}
       <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
