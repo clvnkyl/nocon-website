@@ -112,3 +112,18 @@
     transform: scale(1);
   }
 }
+
+@media (max-width: 1100px) {
+    .certificate-card h2 {
+        font-size: 0.8rem;
+    }
+    .certificate-card {
+        max-width: 300px;
+        max-height: 350px;
+    }
+    .certificate-card {
+      max-width: 250px;
+      height: auto;
+      min-height: 150px;
+  }
+}

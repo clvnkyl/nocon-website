@@ -14,9 +14,8 @@ function Skills() {
 
   return (
         <section id="skill-section" className="skills-section">
-          <h2 className="skills-title">My Skills</h2>
           <div className="skills-container">
-            
+            <h2 className="skills-title">My Skills</h2>
             <AnimatedSection animation="slide-left">
               {Object.entries(skillCategories).map(([category, skills], index) => (
                 <div key={index} className="skills-category">
@@ -31,7 +30,6 @@ function Skills() {
                 </div>
               ))}
             </AnimatedSection>
-            
           </div>
         </section>
   );

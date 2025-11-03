@@ -22,22 +22,22 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects-section" className="projects-container">
-      <h1 className="projects-title">Projects</h1>
-
-      
-      <AnimatedSection animation="slide-left">
-        <div className="projects-grid">
-          {projectList.map((project, index) => (
-            <AnimatedSection key={index} animation="slide-right">
-              <ProjectCards
-                name={project.name}
-                description={project.description}
-              />
-            </AnimatedSection>
-          ))}
-        </div>
-      </AnimatedSection>
+    <section id="projects-section" className="project-section" >
+      <div className="projects-container">
+        <h1 className="projects-title">Projects</h1>
+        <AnimatedSection animation="slide-left">
+          <div className="projects-grid">
+            {projectList.map((project, index) => (
+              <AnimatedSection key={index} animation="slide-right">
+                <ProjectCards
+                  name={project.name}
+                  description={project.description}
+                />
+              </AnimatedSection>
+            ))}
+          </div>
+        </AnimatedSection>
+      </div>
     </section>
   );
 }
