@@ -4,12 +4,13 @@
     align-items: center;
     justify-content: center;
     background: #E0F7FA;
-    padding: 90px 0;
+    padding: 90px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .projects-container h1 {
     font-size: 2.5rem;
-    font-family:'Times New Roman', Times, serif;
     margin-bottom: 20px;
     color: var(--clr-text-primary);
     border-bottom: 2px solid #455A64;

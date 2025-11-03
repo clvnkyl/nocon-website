@@ -19,3 +19,11 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p, span, li {
+  font-family: 'Inter', sans-serif;
+}

@@ -5,7 +5,8 @@
   background-color: #4DD0E1;
   padding: 1rem;
   top: 0;
-  width: 100%;
+  left: 0;
+  width: 100vw;
   z-index: 1000;
   padding: 1rem 0; 
   min-height: 70px;
@@ -17,6 +18,7 @@
   position: absolute;
   left: 40px; 
   height: 50px;
+  margin: 0px 20px;
 }
 
 .navLinks {
@@ -25,7 +27,6 @@
   justify-content: center;
   align-items: center;
   gap: 6rem;
-  margin: 10px 0;
   padding: 0;
 }
 
@@ -33,6 +34,7 @@
   text-decoration: none;
   font-weight: 500;
   font-size: 1.5rem;
+  margin: 10px 0;
 }
 
 .listItems:hover {
@@ -55,22 +57,17 @@
   list-style: none;
 }
 
-.logo {
-  height: 40px;
-  margin: 6px 20px;
-}
-
 /* MOBILE */
 
 .menu-toggle {
   display: none;
   position: absolute;
-  right: 30px;
+  right: 25px;
   background: none;
   border: none;
   color: var(--clr-text-inverted);
   cursor: pointer;
-  z-index: 1100;
+  z-index: 1000;
 }
 
 /* Mobile view */
@@ -79,12 +76,13 @@
     position: fixed;
     top: 70px;
     right: 0;
+    left: auto;
     background-color: rgba(77, 208, 225, 0.95);
     backdrop-filter: blur(10px);
     flex-direction: column;
     align-items: flex-start;
     justify-content: start;
-    width: 60%;
+    width: 50%;
     height: 100vh;
     gap: 2rem;
     padding: 3rem;

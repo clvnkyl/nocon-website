@@ -9,7 +9,7 @@ import resume from '../Certificates/CALVIN KYLE F. NOCON RESUME.pdf'
 
   return (
     <>
-        <div id='home-section' className='headerContainer'>
+        <section id='home-section' className='headerContainer'>
             <header className='header-title'>
               <h1>Hi, I am Calvin Kyle F. Nocon</h1>
               <h2>Computer Engineer | Aspiring Web Developer</h2>
@@ -23,7 +23,7 @@ import resume from '../Certificates/CALVIN KYLE F. NOCON RESUME.pdf'
               className='profilePic'
               alt="my-picture" />
             </div>
-        </div>
+        </section>
     </>
   )
 }

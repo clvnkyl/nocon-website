@@ -10,7 +10,6 @@
 
 .certificate-container h1 {
     font-size: 2.5rem;
-    font-family:'Times New Roman', Times, serif;
     margin-bottom: 20px;
     color: var(--clr-text-primary);
     border-bottom: 2px solid #263238;
