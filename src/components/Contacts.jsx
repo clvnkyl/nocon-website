@@ -8,10 +8,16 @@ function Contacts() {
                 <div className='contacts-container'>
                     <h2 className='contacts-title'>Contact me</h2>
                     <div className='contacts-grid'>
-                        <SocialIcon url="www.linkedin.com/in/clvnkylncn" />
+                        <SocialIcon url="https://linkedin.com/in/clvnkylncn" />
                         <SocialIcon url="https://github.com/clvnkyl" />
                         <SocialIcon url="https://facebook.com/clvnkyl" />
-                        <SocialIcon url="mailto:cknocon@gmail.com" />
+                        <SocialIcon
+                            url="https://mail.google.com/mail/?view=cm&fs=1&to=cknocon@gmail.com"
+                            network="email"
+                            bgColor="#D44638" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        />
                     </div>
                 </div>
             </section>
