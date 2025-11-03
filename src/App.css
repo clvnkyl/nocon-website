@@ -1,0 +1,21 @@
+/* ==== Global Color Palette ==== */
+:root {
+  /* Backgrounds */
+  --clr-bg-1: #E0F7FA;   /* Ice Blue - main background */
+  --clr-bg-2: #B2EBF2;   /* Light Cyan - gradient start */
+  --clr-bg-3: #6ad0ff;   /* Baby Blue - gradient end */
+
+  /* Accent & Highlights */
+  --clr-accent: #4DD0E1;           /* Aqua - buttons, highlights, links */
+  --clr-accent-hover: #26C6DA;     /* Slightly deeper aqua for hover */
+
+  /* Text Colors */
+  --clr-text-primary: #263238;     /* Dark Slate Gray - main text */
+
+  --clr-text-secondary: #0051ff;   /* Muted Blue Gray - subtext */
+
+  --clr-text-muted: #607D8B;       /* Softer gray-blue for captions */
+
+  --clr-text-inverted: #FFFFFF;    /* For text on dark/gradient areas */
+  
+}

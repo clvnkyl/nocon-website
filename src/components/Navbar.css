@@ -2,19 +2,21 @@
   position: fixed;
   display: flex;
   justify-content: center;
-  background-color: #0B1740;
+  background-color: #4DD0E1;
   padding: 1rem;
   top: 0;
   width: 100%;
   z-index: 1000;
   padding: 1rem 0; 
   min-height: 70px;
+  backdrop-filter: blur(10px); /* optional frosted glass effect */
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .logo {
   position: absolute;
-  left: 40px; /* adjust spacing as you like */
-  height: 50px; /* or whatever size fits */
+  left: 40px; 
+  height: 50px;
 }
 
 .navLinks {
@@ -28,7 +30,6 @@
 }
 
 .listItems {
-  color: white;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.5rem;
@@ -40,13 +41,13 @@
 
 .navLinks a {
   display: inline-block;
-  color: white;
+  color: var(--clr-text-inverted);
   text-decoration: none;
-  transition: color 0.5s ease, transform 0.2s ease;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .navLinks a:hover {
-  color: #00bfff;
+  color: white;
   transform: scale(1.2);
 }
 
@@ -57,5 +58,76 @@
 .logo {
   height: 40px;
   margin: 6px 20px;
+}
 
+/* MOBILE */
+
+.menu-toggle {
+  display: none;
+  position: absolute;
+  right: 30px;
+  background: none;
+  border: none;
+  color: var(--clr-text-inverted);
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Mobile view */
+@media (max-width: 1100px) {
+  .navLinks {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    background-color: rgba(77, 208, 225, 0.95);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+    gap: 2rem;
+    padding: 3rem;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+  }
+
+  .navLinks.open {
+    transform: translateX(0);
+    margin-top: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navLinks a {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .logo {
+    left: 20px;
+    height: 40px;
+    margin: 0px 20px;
+  }
+}
+
+.navLinks li {
+  list-style: none;
+  transition: transform 0.2s ease;
+}
+.navLinks li:hover {
+  transform: scale(1.1);
+}
+
+body.menu-open::before {
+  content: "";
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 900;
 }

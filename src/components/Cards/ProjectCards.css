@@ -6,7 +6,7 @@
     height: 500px;
     padding: 20px;
     text-align: center;
-    background-color: #05051A;
+    background-color: #4DD0E1;
 }
 
 .project-card:hover {
@@ -16,12 +16,12 @@
 .project-card h2 {
     font-size: 1.8rem;
     margin: 10px 0;
-    color: #00bfff;
+    color: var(--clr-text-primary);
 }
 
 .project-card p {
     font-size: 1.2rem;
-    color: #ccc;
+    color: #455A64;
 }
 
 .image {

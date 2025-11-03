@@ -7,43 +7,55 @@
 
 .headerContainer {
     display: flex;
+    flex-wrap: wrap-reverse;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 200px 0;
 }   
 
+.header-title {
+    background-color: rgba(255, 255, 255, 0.25); /* translucent white layer */
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(10px); /* for Safari */
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    padding: 50px;
+}
+
 .headerContainer h1 {
     font-size: 3rem;
     margin: 0;
     font-family:'Times New Roman', Times, serif;
-    color: #ffffff;
+    color: var(--clr-text-primary);
 }
 
 .headerContainer h2 {
     font-size: 2rem;
     margin: 0;
-    color: #E0E6FF;
+    color: var(--clr-text-secondary);
 }
 
-.headerButtons {
+.header-buttons-container {
     margin: 15px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .myResume {
-    background-color: #7DA2FF;
+    background-color: #4DD0E1;
     height: 60px;
     width: 250px;
     border-radius: 10px;
+    border: 4px;
     font-size: 1.5rem;
     font-family:'Times New Roman', Times, serif;
     margin: 5px 10px;
+    transition: color 0.4s ease;
 }
 
 .myResume:hover {
-    background-color: #2958FF;
+    background-color: #26C6DA;
     color: #ffffff;
     height: 60px;
     width: 250px;

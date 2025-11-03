@@ -7,7 +7,7 @@
     min-height: 250px;
     padding: 25px;
     text-align: center;
-    background-color: #0B1740;
+    background-color: #4DD0E1;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,6 @@
 }
 
 .certificate-card:hover {
-  color: #111;
   transform: scale(1.05);
   
 }
@@ -25,7 +24,7 @@
 .certificate-card h2 {
     font-size: 1.2rem;
     margin: 10px 0;
-    color: #00bfff;
+    color: var(--clr-text-primary);
     display: -webkit-box;
     -webkit-line-clamp: 2;
     line-clamp: 2; /* for compatibility for other browser */

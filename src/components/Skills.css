@@ -1,6 +1,6 @@
 .skills-section {
-  background-color: #0B1740;
-  color: #00bfff;
+  background-color: #B2EBF2;
+  color: var(--clr-text-primary);
   padding: 90px 0;
   max-width: 100%;
   text-align: center;
@@ -24,17 +24,17 @@
 }
 
 .skill-badge {
-  background-color: #222;
+  background-color: #4DD0E1;
   padding: 0.6rem 1rem;
   border-radius: 999px;
   font-size: 1.25rem;
   transition: all 0.2s ease;
-  color: rgb(255, 255, 255);
+  color: var(--clr-text-primary);
 }
 
 .skill-badge:hover {
-  background-color: #00bfff;
-  color: #111;
+  background-color: #26C6DA;
+  color: #0051ff;
   transform: translateY(-2px);
 }
 
@@ -42,5 +42,5 @@
   font-size: 2rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  color: #00bfff;
+  color: var(--clr-text-primary);
 }

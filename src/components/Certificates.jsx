@@ -9,17 +9,15 @@ import myCertSAP from '../Certificates/Equipping students using SAP to Business 
 export default function Certificate() {
   return (
     <> 
-      <div id='certificate-section' className="certificate-container">
+      <section id='certificate-section' className="certificate-container">
         <h1>Certificate</h1>
           <div className="certificate-grid">
             <CertificateCards image={myCertFrontEnd} name="Computer Engineering Introduction to Front End Development"/>
             <CertificateCards image={myCertAI6g} name="AI & 6G Technology - Pioneering the possibilities of Digital Innovation"/>
             <CertificateCards image={myCertSAP} name="Equipping students using SAP to Business world"/>
             <CertificateCards image={myCertCybersecurity} name="Cybersecurity"/>
-            
           </div>
-      </div>
+      </section>
     </>
   )
 }
-
