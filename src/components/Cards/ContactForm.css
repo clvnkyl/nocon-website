@@ -1,0 +1,76 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #B2EBF2;
+  border-radius: 10px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 1.5rem;
+}
+
+/* Assign grid positions */
+.field-first-name {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.field-last-name {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.field-email {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.field-phone {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.field-message {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+/* Spacing for inputs and labels */
+.contact-form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+
+.submit-btn {
+    background-color: #4DD0E1;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    border: 4px;
+    font-size: 1rem;
+    margin: 10px 0;
+    transition: color 0.4s ease;
+}
+
+.submit-btn:hover {
+    background-color: #26C6DA;
+    color: #ffffff;
+}

@@ -23,9 +23,10 @@ html {
 }
 
 h1, h2, h3 {
-  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-family: 'Merriweather', sans-serif;
 }
 
 p, span, li {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }

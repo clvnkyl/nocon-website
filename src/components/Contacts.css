@@ -1,6 +1,7 @@
 .contacts-section {
     display: flex;
     justify-content: center;
+    min-height: 50vh;
 }
 
 .contacts-container {
@@ -10,6 +11,7 @@
     align-items: center;
     color: #00bfff;
     max-width: 80vw;
+    padding: 90px 0;
 }
 
 .contacts-grid {
