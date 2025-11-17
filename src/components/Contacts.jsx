@@ -8,7 +8,6 @@ function Contacts() {
             <section id="contacts-section" className="contacts-section" >
                 <div className='contacts-container'>
                     <h2 className='contacts-title'>Contact me</h2>
-                    <ContactForm/>
                     <div className='contacts-grid'>
                         <SocialIcon url="https://linkedin.com/in/clvnkylncn" />
                         <SocialIcon url="https://github.com/clvnkyl" />
