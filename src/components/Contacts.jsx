@@ -1,6 +1,6 @@
 import { SocialIcon } from 'react-social-icons';
 import './Contacts.css'
-import ContactForm from './Cards/ContactForm';
+// import ContactForm from './Cards/ContactForm';
 
 function Contacts() {
     return (
