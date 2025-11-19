@@ -61,16 +61,6 @@
     transition: color 0.4s ease;
 }
 
-.myResume:hover {
-    background-color: #26C6DA;
-    color: #ffffff;
-    height: 60px;
-    width: 250px;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    margin: 5px 10px;
-}
-
 @media (max-width: 1100px) {
     .header-container h1 {
         font-size: 2rem;
