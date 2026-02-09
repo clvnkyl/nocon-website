@@ -1,6 +1,6 @@
 import './Header.css';
 import profilePic from '../assets/profilePic.png';
-import resume from '../Certificates/CALVIN KYLE F. NOCON RESUME.pdf'
+import resume from '../Certificates/NOCON, Calvin Kyle F. RESUME.pdf'
 
  export default function Header() {
 
