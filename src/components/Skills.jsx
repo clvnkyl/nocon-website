@@ -3,11 +3,11 @@ import AnimatedSection from "./AnimatedSection";
 
 function Skills() {
   const skillCategories = {
-    "Programming Languages": [ "C#","Java","Visual Basic","JavaScript","HTML","CSS"],
+    "Programming Languages": [ "C#","Java","Visual Basic","JavaScript","HTML","CSS","Python"],
 
     "Hardware & Tools": ["Arduino","AutoCAD","Computer Troubleshooting","Video Editing"],
 
-    "Database & Software": ["SQL","Database Management","Software Proficiency"],
+    "Database & Software": ["SQL","Database Management","Software Proficiency","Power Query", "Pivot Table"],
 
     "Soft Skills": ["Organization","Time Management","Independence","Collaboration","Attention to Detail","Analytical Thinking","Problem Solving","Teamwork"]
   };
