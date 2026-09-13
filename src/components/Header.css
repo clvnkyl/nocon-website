@@ -10,6 +10,10 @@
     max-height: 600px;
     border-radius: 50%;
     margin: 15px;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    display: block;
 }
 
 .header-container {
@@ -77,5 +81,19 @@
         height: 50px;
         width: 150px;
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .profilePic {
+        width: 210px;
+        height: 210px;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
