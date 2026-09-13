@@ -7,7 +7,7 @@ import Contact from './components/Contacts'
 import Footer from './components/Footer'
 import AnimatedSection from './components/AnimatedSection'
 import { useEffect } from "react";
-
+import WorkExperience from "./components/WorkExperience";
 
 function App() {
 
@@ -43,9 +43,13 @@ function App() {
         </AnimatedSection>
       </section>
 
-      <section id="projects" data-title="Projects">
-        <Projects />
+      <section id="experience" data-title="Work Experience">
+        <WorkExperience />
       </section>
+
+      {/* <section id="projects" data-title="Projects">
+        <Projects />
+      </section> */}
 
       <section id="certificates" data-title="Certificates">
         <Certificates />
